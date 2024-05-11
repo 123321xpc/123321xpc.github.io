@@ -117,6 +117,7 @@ const siteLang = siteConfig.lang.replace('_', '-')
 		<style define:vars={{ configHue }}></style>  <!-- defines global css variables. This will be applied to <html> <body> and some other elements idk why -->
 
 	</head>
+
 	<body class=" min-h-screen transition " class:list={[{"is-home": isHomePage, "enable-banner": enableBanner}]}>
 		<ConfigCarrier></ConfigCarrier>
 		<GlobalStyles>
@@ -130,6 +131,8 @@ const siteLang = siteConfig.lang.replace('_', '-')
 		</GlobalStyles>
 	</body>
 </html>
+
+
 <style is:global>
 	:root {
 		--hue: var(--configHue);
