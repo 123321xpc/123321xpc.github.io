@@ -19,6 +19,9 @@
   - 后端
     - maven
     - mybatis-plus
+  - 其他
+    - git
+
 
 - 我练习的所有项目均在 [xpc](https://gitee.com/xpcaptx4869/projects)
 

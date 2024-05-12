@@ -6,6 +6,9 @@ category: 学习笔记
 draft: false
 ---
 
+
+
+
 ## [常用命令](#常用命令)
 - [常用命令](#常用命令-1)
   - [初始化本地仓库](#初始化本地仓库)
@@ -87,7 +90,7 @@ git init
 
 git的区域主要分为以下三块：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512113449.png" alt="QQ截图20240512113449" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512113449.png" alt="QQ截图20240512113449" style="zoom:50%;" />
 
 - **其中：必须先将文件提交到暂存区，不能直接提交到版本库**
 - 添加到暂存区：`git add .`（. 表示将所有文件提交，add 和 . 之间有空格）
@@ -103,7 +106,7 @@ git的区域主要分为以下三块：
 git log --oneline
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132530.png" alt="QQ截图20240512132530" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132530.png" alt="QQ截图20240512132530" style="zoom:50%;" />
 
 
 
@@ -115,7 +118,7 @@ git log
 
 显示如下：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132509.png" alt="QQ截图20240512132509" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132509.png" alt="QQ截图20240512132509" style="zoom:50%;" />
 
 
 
@@ -133,7 +136,7 @@ git reflog
 git reset --hard 版本号
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132740.png" alt="QQ截图20240512132740" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512132740.png" alt="QQ截图20240512132740" style="zoom:80%;" />
 
 
 
@@ -143,7 +146,7 @@ git reset --hard 版本号
 git status
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512133515.png" alt="QQ截图20240512133515" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512133515.png" alt="QQ截图20240512133515" style="zoom:50%;" />
 
 + 红色表示：工作区有文件更改，还没上传到暂存区
 + 绿色表示暂存区有文件更改，还没上传到版本库
@@ -158,7 +161,7 @@ git status
  git branch
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512134929.png" alt="QQ截图20240512134929" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512134929.png" alt="QQ截图20240512134929" style="zoom:80%;" />
 
 + 其中： `*` 表示所处分区
 
@@ -179,7 +182,7 @@ git checkout -b 新分支名
 
 如下图：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140735.png" alt="QQ截图20240512140735" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140735.png" alt="QQ截图20240512140735" style="zoom:80%;" />
 
 
 
@@ -189,7 +192,7 @@ git checkout -b 新分支名
 git checkout 分支名
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512135433.png" alt="QQ截图20240512135433" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512135433.png" alt="QQ截图20240512135433" style="zoom:80%;" />
 
 
 
@@ -207,7 +210,7 @@ git branch -m 旧分支名 新分支名
 git branch -d 分支名
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140450.png" alt="QQ截图20240512140450" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140450.png" alt="QQ截图20240512140450" style="zoom:80%;" />
 
 + 注意：该命令无法删除没提交的分支，若要强制删除，命令如下：
 
@@ -226,7 +229,7 @@ git branch -D 分支名
 git merge 被合并的分支名
 ```
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140310.png" alt="QQ截图20240512140310" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512140310.png" alt="QQ截图20240512140310" style="zoom:80%;" />
 
 3. 合并后删除分支
 
@@ -238,7 +241,7 @@ git merge 被合并的分支名
 
 创建完后会有如下提示：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512142546.png" alt="QQ截图20240512142546" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512142546.png" alt="QQ截图20240512142546" style="zoom:50%;" />
 
 
 
@@ -254,7 +257,7 @@ git remote add origin 仓库地址
 
 地址在上述提示中，或者如下可查看：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512142947.png" alt="QQ截图20240512142947" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512142947.png" alt="QQ截图20240512142947" style="zoom:80%;" />
 
 
 
@@ -318,7 +321,7 @@ git pull
 
 ## 仓库成员添加
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240131154901.png" alt="QQ截图20240131154901" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240131154901.png" alt="QQ截图20240131154901" style="zoom:80%;" />
 
 
 
@@ -334,7 +337,7 @@ ssh-keygen -t ed25519 -C 公钥名称
 
 直接回车3次即可。生成成功后如下图：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512155949.png" alt="QQ截图20240512155949" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512155949.png" alt="QQ截图20240512155949" style="zoom:50%;" />
 
 
 
@@ -346,7 +349,7 @@ cat ~/.ssh/id_ed25519.pub
 
 复制粘贴所有，输入到gitee，如下：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160333.png" alt="QQ截图20240512160333" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160333.png" alt="QQ截图20240512160333" style="zoom:50%;" />
 
 
 
@@ -360,17 +363,17 @@ ssh -T git@gitee.com
 
 之后会弹出提示，是否继续连接，输入yes即可
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160608.png" alt="QQ截图20240512160608" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160608.png" alt="QQ截图20240512160608" style="zoom:80%;" />
 
 之后出现`successfully`，连接成功
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160659.png" alt="QQ截图20240512160659" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512160659.png" alt="QQ截图20240512160659" style="zoom:80%;" />
 
 
 
 之后新建仓库可以直接使用ssh配置
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512161307.png" alt="QQ截图20240512161307" style="zoom: 80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512161307.png" alt="QQ截图20240512161307" style="zoom: 80%;" />
 
 
 
@@ -378,7 +381,7 @@ ssh -T git@gitee.com
 
 ## 语法
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512133208.png" alt="QQ截图20240512133208" style="zoom:80%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512133208.png" alt="QQ截图20240512133208" style="zoom:80%;" />
 
 
 
@@ -386,11 +389,11 @@ ssh -T git@gitee.com
 
 在源代码管理中，可以提交代码。
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512161938.png" alt="QQ截图20240512161938" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512161938.png" alt="QQ截图20240512161938" style="zoom:50%;" />
 
 当你的项目根目录执行过`git init`后，会变成如下这样：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512162135.png" alt="QQ截图20240512162135" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512162135.png" alt="QQ截图20240512162135" style="zoom:50%;" />
 
 当你修改文件之后可以提交，此处提交等价于`commit`，之后可以再次点击同步更改，此处等效于`push`
 
@@ -400,7 +403,7 @@ ssh -T git@gitee.com
 
 - `win 10`系统中：打开任意文件夹，让后如下操作：
 
-<img src="/md-images/git.assets/QQ%E6%88%AA%E5%9B%BE20240512112931.png" alt="QQ截图20240512112931" style="zoom:50%;" />
+<img src="/md-images/学习笔记/git.assets/QQ%E6%88%AA%E5%9B%BE20240512112931.png" alt="QQ截图20240512112931" style="zoom:50%;" />
 
 
 
