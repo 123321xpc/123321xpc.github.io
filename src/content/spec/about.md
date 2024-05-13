@@ -23,7 +23,7 @@
     - git
 
 
-- 我练习的所有项目均在 [xpc](https://gitee.com/xpcaptx4869/projects)
+- 我练习的所有项目均在 [xpc](https://github.com/123321xpc?tab=repositories)
 
 <!-- ::github{repo="saicaca/fuwari"} -->
 
