@@ -36,7 +36,7 @@ draft: false
 
 如下图所示：
 
-![QQ截图20240513161629](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513161629.png)
+![QQ截图20240513161629](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513161629.png)
 
 
 
@@ -95,11 +95,11 @@ p.then(data => console.log(data))
 
 + 文件读取成功时，返回如下：
 
-![QQ截图20240513130539](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513130539.png)
+![QQ截图20240513130539](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513130539.png)
 
 + 文件读取失败时，返回如下：
 
-![QQ截图20240513130634](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513130634.png)
+![QQ截图20240513130634](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513130634.png)
 
 
 
@@ -145,7 +145,7 @@ console.log(p2);
 
 运行结果如下：
 
-![QQ截图20240513163507](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513163507.png)
+![QQ截图20240513163507](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513163507.png)
 
 
 
@@ -174,7 +174,7 @@ console.log(p2);
 
 返回结果如下：
 
-![QQ截图20240513164649](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513164649.png)
+![QQ截图20240513164649](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513164649.png)
 
 
 
@@ -192,7 +192,7 @@ console.log(p2);
 
 返回结果如下：
 
-![QQ截图20240513164838](../../../../public/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513164838.png)
+![QQ截图20240513164838](/writing/Promise.asserts/QQ%E6%88%AA%E5%9B%BE20240513164838.png)
 
 
 
