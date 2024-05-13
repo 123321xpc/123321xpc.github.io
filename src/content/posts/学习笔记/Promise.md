@@ -5,7 +5,7 @@ description: ''
 image: ''
 tags: [Promise, 学习笔记]
 category: '学习笔记'
-draft: false 
+draft: true 
 ---
 
 # 异步编程有哪些
