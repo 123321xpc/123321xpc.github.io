@@ -3,8 +3,8 @@ title: Promise
 published: 2024-05-13
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [Promise, 学习笔记]
+category: '学习笔记'
 draft: false 
 ---
 
