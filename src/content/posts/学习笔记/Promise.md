@@ -8,6 +8,32 @@ category: '学习笔记'
 draft: false 
 ---
 
+- [异步编程有哪些](#异步编程有哪些)
+- [什么是Promise](#什么是promise)
+- [Promise优点](#promise优点)
+- [Promise基本流程](#promise基本流程)
+- [基本使用](#基本使用)
+  - [封装语法](#封装语法)
+  - [Promise封装文件读取操作](#promise封装文件读取操作)
+- [Promise对象的属性](#promise对象的属性)
+  - [PromiseState 状态](#promisestate-状态)
+  - [PromiseResult 结果](#promiseresult-结果)
+- [API](#api)
+  - [Promise.resolve（value）](#promiseresolvevalue)
+  - [Promise.reject(value)](#promiserejectvalue)
+  - [Promise.all（promises）](#promiseallpromises)
+  - [Promise.race（promises）](#promiseracepromises)
+- [一系列问题](#一系列问题)
+  - [一、如何改变`Promise`状态？](#一如何改变promise状态)
+  - [二、当`Promise`指定多个回调（ promise.then() ）时，是否会全部执行？](#二当promise指定多个回调-promisethen-时是否会全部执行)
+  - [三、`Promise`状态改变和回调函数指定谁先谁后？](#三promise状态改变和回调函数指定谁先谁后)
+  - [四、什么时候才能得到数据？](#四什么时候才能得到数据)
+  - [五、`then`方法返回的结果由什么决定？](#五then方法返回的结果由什么决定)
+  - [六、如何实现`Promise`的链式调用？](#六如何实现promise的链式调用)
+  - [七、什么是`Promise`的异常穿透？](#七什么是promise的异常穿透)
+- [async\&await](#asyncawait)
+
+
 # 异步编程有哪些
 
 + fs 文件操作
