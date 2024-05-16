@@ -3,8 +3,8 @@ title: markdown自动生成目录插件
 published: 2024-05-12
 description: ''
 image: ''
-tags: [VSCode]
-category: 'VSCode相关'
+tags: [插件]
+category: '其他'
 draft: false 
 ---
 
