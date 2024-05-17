@@ -440,11 +440,11 @@ spring:
 
 - 法一：
 
-![QQ截图20240119141605](pictures/QQ%E6%88%AA%E5%9B%BE20240119141605.png)
+![QQ截图20240119141605](/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141605.png)
 
 - 法二
 
-![QQ截图20240119141800](pictures/QQ%E6%88%AA%E5%9B%BE20240119141800.png)
+![QQ截图20240119141800](/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141800.png)
 
 
 
