@@ -3,8 +3,8 @@ title: markdown自动生成目录插件
 published: 2024-05-12
 description: ''
 image: ''
-tags: [插件]
-category: '其他'
+tags: [推荐]
+category: '推荐'
 draft: false 
 ---
 
