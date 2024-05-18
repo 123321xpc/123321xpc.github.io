@@ -42,7 +42,7 @@ published: ${getDate()}
 description: ''
 image: ''
 tags: []
-category: ''
+category: '各类问题'
 draft: false 
 ---
 `
