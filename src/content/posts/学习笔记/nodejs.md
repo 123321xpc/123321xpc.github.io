@@ -82,13 +82,13 @@ draft: false
 
 因为所有浏览器中都有一个专门解析`js`的解析引擎。
 
-![QQ截图20240516134949](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516134949.png)
+![QQ截图20240516134949](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516134949.png)
 
 
 
 # 浏览器中Javascript的运行环境
 
-![QQ截图20240516135403](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516135403.png)
+![QQ截图20240516135403](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516135403.png)
 
 
 
@@ -98,7 +98,7 @@ draft: false
 
 # Nodejs中的Javascript的运行环境
 
-![QQ截图20240516135832](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516135832.png)
+![QQ截图20240516135832](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516135832.png)
 
 
 
@@ -131,13 +131,13 @@ fs.readFile('text.txt', 'utf8', (err, data) => {
 
 若文件不存在，输出如下下：
 
-![QQ截图20240516141302](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516141302.png)
+![QQ截图20240516141302](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516141302.png)
 
 
 
 若正常，输出文件内容：
 
-![QQ截图20240516141340](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516141340.png)
+![QQ截图20240516141340](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516141340.png)
 
 
 
@@ -169,7 +169,7 @@ fs.writeFile('test1.txt', 'Hello, world!', (err) => {
 
 输出如下：
 
-![QQ截图20240516142016](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516142016.png)
+![QQ截图20240516142016](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516142016.png)
 
 
 
@@ -188,7 +188,7 @@ console.log(exists); // 输出 true 或 false
 
 ## 练习
 
-![QQ截图20240516142146](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516142146.png)
+![QQ截图20240516142146](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516142146.png)
 
 
 
@@ -250,7 +250,7 @@ fs.readFile('./text.txt', (err, data) => {
 
 - 当我在`exerc`，目录下运行命令`node .\a.js`，能成功读取文件，但当我到`Desktop`目录运行命令`node .\exerc\a.js`时，却读取不到文件，且错误信息如下：
 
-![QQ截图20240516145437](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516145437.png)
+![QQ截图20240516145437](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516145437.png)
 
 - 可以看出：`nodejs`将运行命令时的绝对路径凭借到了相对路径上，所以没有拼接`exerc`目录。
 
@@ -260,7 +260,7 @@ fs.readFile('./text.txt', (err, data) => {
 
 - 作用：将传入的多个路径片段拼接。
 
-![QQ截图20240516150020](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516150020.png)
+![QQ截图20240516150020](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516150020.png)
 
 
 
@@ -330,7 +330,7 @@ console.log(path.parse(url3))
 
 结果如下：
 
-![QQ截图20240516151351](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516151351.png)
+![QQ截图20240516151351](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516151351.png)
 
 
 
@@ -370,7 +370,7 @@ server.listen(80, () => {
 
 ## 根据不同url返回不同内容
 
-![QQ截图20240516155749](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516155749.png)
+![QQ截图20240516155749](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240516155749.png)
 
 
 
@@ -378,7 +378,7 @@ server.listen(80, () => {
 
 ## 分类
 
-![QQ截图20240517133201](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517133201.png)
+![QQ截图20240517133201](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517133201.png)
 
 
 
@@ -435,15 +435,15 @@ const axios = require('axios');
 
 ## module.exports 和exports
 
-![QQ截图20240517134509](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517134509.png)
+![QQ截图20240517134509](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517134509.png)
 
-![QQ截图20240517135708](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517135708.png)
+![QQ截图20240517135708](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517135708.png)
 
 
 
 ## CommonJS规范
 
-![QQ截图20240517135947](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517135947.png)
+![QQ截图20240517135947](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517135947.png)
 
 
 
@@ -482,31 +482,31 @@ app.get('/', (req, res) => {
 
 ## 获取url中的query参数
 
-![QQ截图20240517141955](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517141955.png)
+![QQ截图20240517141955](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517141955.png)
 
 
 
 ## 获取动态参数
 
-![QQ截图20240517142158](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517142158.png)
+![QQ截图20240517142158](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517142158.png)
 
 
 
 ## 托管静态资源目录
 
-![QQ截图20240517142634](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517142634.png)
+![QQ截图20240517142634](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517142634.png)
 
 
 
 ## 托管多个静态资源目录
 
-![QQ截图20240517143014](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517143014.png)
+![QQ截图20240517143014](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517143014.png)
 
 
 
 ## 添加路径前缀
 
-![QQ截图20240517143310](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517143310.png)
+![QQ截图20240517143310](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517143310.png)
 
 
 
@@ -514,17 +514,17 @@ app.get('/', (req, res) => {
 
 ### 创建路由
 
-![QQ截图20240517145508](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517145508.png)
+![QQ截图20240517145508](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517145508.png)
 
 
 
 ### 路由模块化
 
-![QQ截图20240517150408](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517150408.png)
+![QQ截图20240517150408](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517150408.png)
 
 路由添加前缀
 
-![QQ截图20240517150704](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517150704.png)
+![QQ截图20240517150704](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517150704.png)
 
 
 
@@ -532,7 +532,7 @@ app.get('/', (req, res) => {
 
 ### 格式
 
-![QQ截图20240517151050](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151050.png)
+![QQ截图20240517151050](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151050.png)
 
 
 
@@ -542,13 +542,13 @@ app.get('/', (req, res) => {
 
 ### 定义中间件函数
 
-![QQ截图20240517151235](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151235.png)
+![QQ截图20240517151235](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151235.png)
 
 
 
 ### 注册全局中间件函数
 
-![QQ截图20240517151456](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151456.png)
+![QQ截图20240517151456](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517151456.png)
 
 
 
@@ -558,19 +558,19 @@ app.get('/', (req, res) => {
 
 
 
-![QQ截图20240517152213](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152213.png)
+![QQ截图20240517152213](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152213.png)
 
 
 
 ### 定义局部中间件
 
-![QQ截图20240517152439](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152439.png)
+![QQ截图20240517152439](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152439.png)
 
 
 
 ### 使用多个局部中间件
 
-![QQ截图20240517152720](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152720.png)
+![QQ截图20240517152720](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517152720.png)
 
 > 注：中间件依次执行。
 
@@ -578,25 +578,25 @@ app.get('/', (req, res) => {
 
 ### 中间件分类
 
-![QQ截图20240517153035](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153035.png)
+![QQ截图20240517153035](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153035.png)
 
 
 
 #### 应用级别的中间件
 
-![QQ截图20240517153200](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153200.png)
+![QQ截图20240517153200](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153200.png)
 
 
 
 #### 路由级别的中间件
 
-![QQ截图20240517153235](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153235.png)
+![QQ截图20240517153235](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153235.png)
 
 
 
 #### 错误级别的中间件
 
-![QQ截图20240517153408](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153408.png)
+![QQ截图20240517153408](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517153408.png)
 
 
 
@@ -606,13 +606,13 @@ app.get('/', (req, res) => {
 
 #### 内置中间件
 
-![QQ截图20240517154008](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154008.png)
+![QQ截图20240517154008](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154008.png)
 
 
 
 #### 第三方中间件
 
-![QQ截图20240517154500](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154500.png)
+![QQ截图20240517154500](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154500.png)
 
 
 
@@ -637,21 +637,21 @@ nodemon app.js
 
 ## Access-Control-Allow-Origin：解决跨域
 
-![QQ截图20240517154859](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154859.png)
+![QQ截图20240517154859](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154859.png)
 
-![QQ截图20240517154752](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154752.png)
+![QQ截图20240517154752](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154752.png)
 
 
 
 ## Access-Control-Allow-Headers：发送额外请求头信息
 
-![QQ截图20240517154823](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154823.png)
+![QQ截图20240517154823](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517154823.png)
 
 
 
 ## Access-Control-Allow-Methods：使用其他方式发送请求
 
-![QQ截图20240517155024](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155024.png)
+![QQ截图20240517155024](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155024.png)
 
 
 
@@ -659,29 +659,29 @@ nodemon app.js
 
 ### 简单请求
 
-![QQ截图20240517155236](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155236.png)
+![QQ截图20240517155236](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155236.png)
 
 
 
 ### 预检请求
 
-![QQ截图20240517155341](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155341.png)
+![QQ截图20240517155341](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155341.png)
 
 
 
 ### 区别
 
-![QQ截图20240517155428](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155428.png)
+![QQ截图20240517155428](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517155428.png)
 
 
 
 ### JSONP请求
 
-![QQ截图20240517160238](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160238.png)
+![QQ截图20240517160238](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160238.png)
 
 
 
-![QQ截图20240517160318](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160318.png)
+![QQ截图20240517160318](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160318.png)
 
 
 
@@ -689,13 +689,13 @@ nodemon app.js
 
 ## 原理
 
-![QQ截图20240517160655](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160655.png)
+![QQ截图20240517160655](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160655.png)
 
 
 
 ## 使用方式
 
-![QQ截图20240517160954](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160954.png)
+![QQ截图20240517160954](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517160954.png)
 
 
 
@@ -709,19 +709,19 @@ cnpm i jsonwebtoken express-jwt
 
 - 导入
 
-![QQ截图20240517161150](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161150.png)
+![QQ截图20240517161150](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161150.png)
 
 - 定义`secret`密钥
 
-![QQ截图20240517161512](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161512.png)
+![QQ截图20240517161512](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161512.png)
 
 - 生成`JWT`字符串
 
-![QQ截图20240517161612](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161612.png)
+![QQ截图20240517161612](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161612.png)
 
 - 解析`JWT`令牌
 
-![QQ截图20240517161906](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161906.png)
+![QQ截图20240517161906](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517161906.png)
 
 
 
@@ -731,7 +731,7 @@ cnpm i jsonwebtoken express-jwt
 
 ## 获取用户信息
 
-![QQ截图20240517162416](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517162416.png)
+![QQ截图20240517162416](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517162416.png)
 
 
 
@@ -741,4 +741,4 @@ cnpm i jsonwebtoken express-jwt
 
 ## 捕获解析JWT失败的错误
 
-![QQ截图20240517162511](/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517162511.png)
+![QQ截图20240517162511](https://vip.123pan.cn/1828962653/md-images/学习笔记/nodejs.assets/QQ%E6%88%AA%E5%9B%BE20240517162511.png)

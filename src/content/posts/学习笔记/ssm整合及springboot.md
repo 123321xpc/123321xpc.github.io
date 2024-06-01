@@ -24,7 +24,7 @@ draft: false
 
 # Spring容器和核心概念
 
-![QQ截图20240517225155](/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
+![QQ截图20240517225155](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
 
 
 # SSM整合
@@ -440,11 +440,11 @@ spring:
 
 - 法一：
 
-![QQ截图20240119141605](/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141605.png)
+![QQ截图20240119141605](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141605.png)
 
 - 法二
 
-![QQ截图20240119141800](/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141800.png)
+![QQ截图20240119141800](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141800.png)
 
 
 

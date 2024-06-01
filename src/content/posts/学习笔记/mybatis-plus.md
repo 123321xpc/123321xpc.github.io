@@ -528,19 +528,19 @@ public class Pass {
 
 ### 修改数据
 
-![QQ截图20240517224101](/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224101.png)
+![QQ截图20240517224101](https://vip.123pan.cn/1828962653/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224101.png)
 
 
 
 ### 根据条件是否满足组装条件
 
-![QQ截图20240517224119](/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224119.png)
+![QQ截图20240517224119](https://vip.123pan.cn/1828962653/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224119.png)
 
 
 
 ### lamba wapper
 
-![QQ截图20240517224135](/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224135.png)
+![QQ截图20240517224135](https://vip.123pan.cn/1828962653/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224135.png)
 
 
 
@@ -548,7 +548,7 @@ public class Pass {
 
 - 配置分页插件
 
-![QQ截图20240517224202](/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224202.png)
+![QQ截图20240517224202](https://vip.123pan.cn/1828962653/md-images/学习笔记/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224202.png)
 
 ```java
 package com.example.interceptor;
