@@ -19,12 +19,11 @@ draft: false
   - [xml整合](#xml整合)
 - [springboot](#springboot)
   - [编写配置信息(durid)](#编写配置信息durid)
-  - [信息获取](#信息获取)
 
 
 # Spring容器和核心概念
 
-![QQ截图20240517225155](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
+![QQ截图20240517225155](https://vip.123pan.cn/1828962653/md-images/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
 
 
 # SSM整合
@@ -434,17 +433,6 @@ spring:
 
 ```
 
-
-
-## 信息获取
-
-- 法一：
-
-![QQ截图20240119141605](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141605.png)
-
-- 法二
-
-![QQ截图20240119141800](https://vip.123pan.cn/1828962653/md-images/学习笔记/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240119141800.png)
 
 
 

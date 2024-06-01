@@ -29,13 +29,13 @@ draft: false
 
 # 创建项目
 
-![QQ截图20240518145035](https://vip.123pan.cn/1828962653/md-images/学习笔记/django.assets/QQ%E6%88%AA%E5%9B%BE20240518145035.png)
+![QQ截图20240518145035](https://vip.123pan.cn/1828962653/md-images/django.assets/QQ%E6%88%AA%E5%9B%BE20240518145035.png)
 
 
 
 ## 初始目录
 
-![QQ截图20240518144810](https://vip.123pan.cn/1828962653/md-images/学习笔记/django.assets/QQ%E6%88%AA%E5%9B%BE20240518144810.png)
+![QQ截图20240518144810](https://vip.123pan.cn/1828962653/md-images/django.assets/QQ%E6%88%AA%E5%9B%BE20240518144810.png)
 
 
 
@@ -162,7 +162,7 @@ python .\manage.py runserver
 python .\manage.py startapp App
 ```
 
-![QQ截图20240518151540](https://vip.123pan.cn/1828962653/md-images/学习笔记/django.assets/QQ%E6%88%AA%E5%9B%BE20240518151540.png)
+![QQ截图20240518151540](https://vip.123pan.cn/1828962653/md-images/django.assets/QQ%E6%88%AA%E5%9B%BE20240518151540.png)
 
 
 
@@ -262,7 +262,7 @@ class testModel(models.Model):
 
 - 注意：创建模型后要迁移数据，迁移完后，数据库会多出一张表，如下图：
 
-![QQ截图20240518155410](https://vip.123pan.cn/1828962653/md-images/学习笔记/django.assets/QQ%E6%88%AA%E5%9B%BE20240518155410.png)
+![QQ截图20240518155410](https://vip.123pan.cn/1828962653/md-images/django.assets/QQ%E6%88%AA%E5%9B%BE20240518155410.png)
 
 
 
@@ -287,7 +287,7 @@ python manage.py createsuperuser
 
 - 在`mytest/admin`下注册模型
 
-![QQ截图20240518161224](https://vip.123pan.cn/1828962653/md-images/学习笔记/django.assets/QQ%E6%88%AA%E5%9B%BE20240518161224.png)
+![QQ截图20240518161224](https://vip.123pan.cn/1828962653/md-images/django.assets/QQ%E6%88%AA%E5%9B%BE20240518161224.png)
 
 - 在项目路由中添加`url`
 
