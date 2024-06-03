@@ -62,7 +62,7 @@ draft: false
 
 如下图所示：
 
-![QQ截图20240513161629](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513161629.png)
+![QQ截图20240513161629](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513161629.png)
 
 
 
@@ -121,11 +121,11 @@ p.then(data => console.log(data))
 
 + 文件读取成功时，返回如下：
 
-![QQ截图20240513130539](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513130539.png)
+![QQ截图20240513130539](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513130539.png)
 
 + 文件读取失败时，返回如下：
 
-![QQ截图20240513130634](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513130634.png)
+![QQ截图20240513130634](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513130634.png)
 
 
 
@@ -171,7 +171,7 @@ console.log(p2);
 
 运行结果如下：
 
-![QQ截图20240513163507](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513163507.png)
+![QQ截图20240513163507](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513163507.png)
 
 
 
@@ -200,7 +200,7 @@ console.log(p2);
 
 返回结果如下：
 
-![QQ截图20240513164649](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513164649.png)
+![QQ截图20240513164649](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513164649.png)
 
 
 
@@ -218,7 +218,7 @@ console.log(p2);
 
 返回结果如下：
 
-![QQ截图20240513164838](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513164838.png)
+![QQ截图20240513164838](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240513164838.png)
 
 
 
@@ -255,7 +255,7 @@ console.log(p2);
 
 返回结果如下：
 
-![QQ截图20240514145716](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240514145716.png)
+![QQ截图20240514145716](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240514145716.png)
 
 
 
@@ -300,7 +300,7 @@ console.log(res);
 
 其中，`p`返回的是成功的`Promise`，调用`then`方法中的第一个回调函数，但是抛出了错误，**故结果为失败的`Promise`**，如下：
 
-![QQ截图20240515130704](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515130704.png)
+![QQ截图20240515130704](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515130704.png)
 
 
 
@@ -318,7 +318,7 @@ console.log(res);
 
 - 其中，在`then`方法的第二个回调函数中返回`number`类型，返回结果仍为成功的`Promise`，如下：
 
-![QQ截图20240515131225](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515131225.png)
+![QQ截图20240515131225](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515131225.png)
 
 
 
@@ -334,7 +334,7 @@ console.log(res);
 
 返回结果如下：
 
-![QQ截图20240515131613](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515131613.png)
+![QQ截图20240515131613](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515131613.png)
 
 
 
@@ -361,7 +361,7 @@ console.log(res);
 
 输出结果如下：
 
-![QQ截图20240515132857](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515132857.png)
+![QQ截图20240515132857](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515132857.png)
 
 需要注意的是，最后一次打印的`res`是`undefined`，因为上一次的回调函数没有返回值。
 
@@ -410,7 +410,7 @@ console.log(res);
 
 上述返回结果为：
 
-![QQ截图20240515135217](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515135217.png)
+![QQ截图20240515135217](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515135217.png)
 
 要想`33`，`44`不打印，则可以在打印`22`的后面返回空的`Promise`对象，如下：
 
@@ -428,7 +428,7 @@ console.log(res);
 
 输出结果如下：
 
-![QQ截图20240515135416](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515135416.png)
+![QQ截图20240515135416](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/Promise.assets/QQ%E6%88%AA%E5%9B%BE20240515135416.png)
 
 
 

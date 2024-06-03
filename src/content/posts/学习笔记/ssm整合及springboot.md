@@ -23,7 +23,7 @@ draft: false
 
 # Spring容器和核心概念
 
-![QQ截图20240517225155](https://123321xpc-pictures.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
+![QQ截图20240517225155](https://123321xpc-images.oss-cn-hangzhou.aliyuncs.com/imgs/md-images/ssm.assets/QQ%E6%88%AA%E5%9B%BE20240517225155.png)
 
 
 # SSM整合
