@@ -102,7 +102,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 # 目录结构
 
-![QQ截图20240123160844](D:/markdown/pictures/QQ截图20240123160844.png)
+![QQ截图20240123160844](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240123160844.png)
 
 
 
@@ -340,7 +340,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 ## 服务器突然断开，来不及保存
 
-![QQ截图20231220165205](D:/markdown/pictures/QQ截图20231220165205.png)
+![QQ截图20231220165205](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20231220165205.png)
 
 - 恢复：`vim -r 文件名`-
 
@@ -348,7 +348,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 # 用户和用户组管理
 
-![QQ截图20240111172902](D:/markdown/pictures/QQ截图20240111172902.png)
+![QQ截图20240111172902](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240111172902.png)
 
 ## useradd添加用户
 
@@ -356,7 +356,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 ## passwd设置密码
 
-![QQ截图20240111173951](D:/markdown/pictures/QQ截图20240111173951.png)
+![QQ截图20240111173951](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240111173951.png)
 
 ![QQ截图20240111174106](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240111174106.png)
 
@@ -412,7 +412,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 
 
-![QQ截图20240111183133](D:/markdown/pictures/QQ截图20240111183133.png)
+![QQ截图20240111183133](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240111183133.png)
 
 - 注意：
 
@@ -490,7 +490,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 ## top查看所有进程（实时更新）
 
-![QQ截图20240112155413](D:/markdown/pictures/QQ截图20240112155413.png)
+![QQ截图20240112155413](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240112155413.png)
 
 ![QQ截图20240112155448](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240112155448.png)
 
@@ -498,7 +498,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 ## pstree查看进程（树状）
 
-![QQ截图20240112160652](D:/markdown/pictures/QQ截图20240112160652.png)
+![QQ截图20240112160652](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240112160652.png)
 
 
 
@@ -530,7 +530,7 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 ## systemctl
 
-![QQ截图20240112164236](D:/markdown/pictures/QQ截图20240112164236.png)
+![QQ截图20240112164236](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240112164236.png)
 
 ![QQ截图20240112164506](https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20240112164506.png)
 
