@@ -736,4 +736,4 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 - 函数传参：同参数传递！
 
-![QQ截图20240118163543](pictures/QQ截图20240118163543.png)
+![QQ截图20240118163543]([pictures](https://vip.123pan.cn/1828962653/md-images/linux.assets)/QQ截图20240118163543.png)
