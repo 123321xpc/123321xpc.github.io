@@ -14,12 +14,12 @@ draft: false
 - [在启动类中添加注解](#在启动类中添加注解)
 - [框架](#框架)
 - [基础CRUD](#基础crud)
-  - [查询数据](#查询数据)
-  - [自定义联表查询](#自定义联表查询)
-    - [xml文件方式](#xml文件方式)
-  - [添加数据](#添加数据)
-  - [删除数据](#删除数据)
-  - [修改数据](#修改数据)
+    - [查询数据](#查询数据)
+    - [自定义联表查询](#自定义联表查询)
+      - [xml文件方式](#xml文件方式)
+    - [添加数据](#添加数据)
+    - [删除数据](#删除数据)
+    - [修改数据](#修改数据)
 - [自定义service接口](#自定义service接口)
 - [批量添加数据](#批量添加数据)
 - [yml文件配置](#yml文件配置)
@@ -38,6 +38,9 @@ draft: false
   - [根据条件是否满足组装条件](#根据条件是否满足组装条件)
   - [lamba wapper](#lamba-wapper)
 - [分页](#分页)
+- [Mybatis-plus逻辑删除](#mybatis-plus逻辑删除)
+- [枚举处理器](#枚举处理器)
+- [JSON处理器](#json处理器)
 
 
 
@@ -594,7 +597,7 @@ public class PageInterceptor {
 
 # Mybatis-plus逻辑删除
 
-![image-20240607222255252](Z:/md-images/mybatis-plus.assets/image-20240607222255252.png)
+![image-20240607222255252](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607222255252.png)
 
 > 注意：逻辑删除字段命名必须为`deleted`
 
@@ -604,7 +607,7 @@ public class PageInterceptor {
 
 + 实现`java`类中枚举类型与数据库对应字段相互对应
 
-![image-20240607225047217](Z:/md-images/mybatis-plus.assets/image-20240607225047217.png)
+![image-20240607225047217](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607225047217.png)
 
 
 
@@ -612,17 +615,17 @@ public class PageInterceptor {
 
 1. 用注解标识枚举的属性
 
-<img src="Z:/md-images/mybatis-plus.assets/image-20240607225409870.png" alt="image-20240607225409870" style="zoom:50%;" />
+<img src="https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607225409870.png" alt="image-20240607225409870" style="zoom:50%;" />
 
 2. 配置全局处理器
 
-![image-20240607225435352](Z:/md-images/mybatis-plus.assets/image-20240607225435352.png)
+![image-20240607225435352](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607225435352.png)
 
 
 
 + 注：默认返回是英文的字段，可通过设置`@JsonValue`注解返回需要的值
 
-![image-20240607225812896](Z:/md-images/mybatis-plus.assets/image-20240607225812896.png)
+![image-20240607225812896](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607225812896.png)
 
 如上图，若不设置注解，返回的是`NORMAL`，设置注解后返回的是正常。
 
@@ -633,7 +636,7 @@ public class PageInterceptor {
 + 处理多层`JSON`数据嵌套（javabean的属性中也有javabean）
 + 设置方法：
 
-![image-20240607230759362](Z:/md-images/mybatis-plus.assets/image-20240607230759362.png)
+![image-20240607230759362](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/image-20240607230759362.png)
 
 1. 添加`@TableField`注解
 2. 开启`autoResultMap = true`
