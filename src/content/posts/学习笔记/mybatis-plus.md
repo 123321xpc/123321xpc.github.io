@@ -41,7 +41,7 @@ draft: false
 
 
 
-## 引入依赖(Springboot 3.2)
+# 引入依赖(Springboot 3.2)
 
 ```xml
 		<dependency>
@@ -81,7 +81,7 @@ draft: false
 
 
 
-## 编写配置文件
+# 编写配置文件
 
 ```yaml
 spring:
@@ -100,7 +100,7 @@ mybatis-plus:
 
 
 
-## 添加mapper
+# 添加mapper
 
 ```java
 public interface UserMapper extends BaseMapper<User> {
@@ -109,7 +109,7 @@ public interface UserMapper extends BaseMapper<User> {
 
 
 
-## 在启动类中添加注解
+# 在启动类中添加注解
 
 ```java
 @SpringBootApplication
@@ -139,7 +139,7 @@ public class Pass {
 
 
 
-## 框架
+# 框架
 
 ```java
 import cn.practice.musicplayer.mapper.MusicMapper;
@@ -160,7 +160,7 @@ public class MusicService {
 
 
 
-## 基础CRUD
+# 基础CRUD
 
 ### 查询数据
 
@@ -278,7 +278,7 @@ public void testPass(){
 
 
 
-## 自定义service接口
+# 自定义service接口
 
 - `passService`：
 
@@ -323,7 +323,7 @@ public class DemoApplication {
 
 
 
-## 批量添加数据
+# 批量添加数据
 
 ```java
 public void testService(){
@@ -342,7 +342,7 @@ public void testService(){
 
 
 
-## yml文件配置
+# yml文件配置
 
 ```yaml
 mybatis-plus:
@@ -358,9 +358,9 @@ mybatis-plus:
 
 
 
-## 注解
+# 注解
 
-### @TableName
+## @TableName
 
 - 作用：设置实体类的表名
 
@@ -376,7 +376,7 @@ public class Pass {
 
 
 
-### @TableId
+## @TableId
 
 - 作用：设置主键(当主键名不为id时用)
 - 例1：
@@ -420,7 +420,7 @@ public class Pass {
 
 
 
-### @TableField
+## @TableField
 
 - 作用：指定属性对应的字段名
 - 例：
@@ -439,7 +439,7 @@ public class Pass {
 
 
 
-### @TableLogic
+## @TableLogic
 
 - 作用：逻辑删除
 
@@ -461,9 +461,9 @@ public class Pass {
 
 
 
-## 条件构造器wapper
+# 条件构造器wapper
 
-### 搜索`id`以97结尾的数据：
+## 搜索`id`以97结尾的数据：
 
 ```java
     public void testService(){
@@ -473,7 +473,7 @@ public class Pass {
     }
 ```
 
-### 按`id`降序排序：
+## 按`id`降序排序：
 
 ```java
     public void testService(){
@@ -484,7 +484,7 @@ public class Pass {
     }
 ```
 
-### 或条件
+## 或条件
 
 ```java
     public void testService(){
@@ -497,7 +497,7 @@ public class Pass {
     }
 ```
 
-### 优先级
+## 优先级
 
 ```java
     public void testService(){
@@ -512,7 +512,7 @@ public class Pass {
     }
 ```
 
-### 查询特定字段
+## 查询特定字段
 
 ```java
     public void testService(){
@@ -526,29 +526,33 @@ public class Pass {
 
 
 
-### 修改数据
+## 修改数据
 
 ![QQ截图20240517224101](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224101.png)
 
 
 
-### 根据条件是否满足组装条件
+## 根据条件是否满足组装条件
 
 ![QQ截图20240517224119](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224119.png)
 
 
 
-### lamba wapper
+## lamba wapper
 
 ![QQ截图20240517224135](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224135.png)
 
 
 
-## 分页
+# 分页
 
 - 配置分页插件
 
 ![QQ截图20240517224202](https://vip.123pan.cn/1828962653/md-images/mybatis-plus.assets/QQ%E6%88%AA%E5%9B%BE20240517224202.png)
+
+
+
+1. 配置分页拦截器
 
 ```java
 package com.example.interceptor;
@@ -584,3 +588,52 @@ public class PageInterceptor {
     }
 ```
 
+
+
+
+
+# Mybatis-plus逻辑删除
+
+![image-20240607222255252](Z:/md-images/mybatis-plus.assets/image-20240607222255252.png)
+
+> 注意：逻辑删除字段命名必须为`deleted`
+
+
+
+# 枚举处理器
+
++ 实现`java`类中枚举类型与数据库对应字段相互对应
+
+![image-20240607225047217](Z:/md-images/mybatis-plus.assets/image-20240607225047217.png)
+
+
+
+方法：
+
+1. 用注解标识枚举的属性
+
+<img src="Z:/md-images/mybatis-plus.assets/image-20240607225409870.png" alt="image-20240607225409870" style="zoom:50%;" />
+
+2. 配置全局处理器
+
+![image-20240607225435352](Z:/md-images/mybatis-plus.assets/image-20240607225435352.png)
+
+
+
++ 注：默认返回是英文的字段，可通过设置`@JsonValue`注解返回需要的值
+
+![image-20240607225812896](Z:/md-images/mybatis-plus.assets/image-20240607225812896.png)
+
+如上图，若不设置注解，返回的是`NORMAL`，设置注解后返回的是正常。
+
+
+
+# JSON处理器
+
++ 处理多层`JSON`数据嵌套（javabean的属性中也有javabean）
++ 设置方法：
+
+![image-20240607230759362](Z:/md-images/mybatis-plus.assets/image-20240607230759362.png)
+
+1. 添加`@TableField`注解
+2. 开启`autoResultMap = true`

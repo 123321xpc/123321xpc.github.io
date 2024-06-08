@@ -183,6 +183,50 @@ https://mirrors.tuna.tsinghua.edu.cn/centos-vault/7.6.1810/isos/x86_64/
 
 
 
+# yum换源
+
+## 手动换源
+
+```
+yum install -y wget
+
+#下载新的yum源
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo 
+
+#更新yum缓存
+yum clean all 
+yum makecache
+```
+
+
+
+## 自动换源
+
+```
+#安装yum-utils
+yum -y install yum-utils 
+
+#更改yum源
+yum-config-manager --add-repo http://mirrors.aliyun.com/repo/Centos-7.repo 
+
+#更新yum缓存
+yum makecache                      
+```
+
+
+
+## 常见源
+
+```
+#CentOS 7 阿里云yum源
+http://mirrors.aliyun.com/repo/Centos-7.repo 
+
+#CentOS 7 清华大学yum源
+http://mirrors.tuna.tsinghua.edu.cn/help/centos/
+```
+
+
+
 # 快照拍摄(系统还原)
 
 <img src="https://vip.123pan.cn/1828962653/md-images/linux.assets/QQ截图20231220141359.png" alt="QQ截图20231220141359" style="zoom:67%;" />
