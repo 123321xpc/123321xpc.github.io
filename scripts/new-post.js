@@ -41,8 +41,8 @@ title: ${args[0]}
 published: ${getDate()}
 description: ''
 image: ''
-tags: [设计模式]
-category: '设计模式'
+tags: []
+category: ''
 draft: false 
 ---
 `
