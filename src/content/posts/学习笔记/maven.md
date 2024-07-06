@@ -116,7 +116,7 @@ Maven 下载 jar 包默认访问境外的中央仓库，而国外网站速度很
 
 ### 配置PATH
 
-![image-17067840043351](https://vip.123pan.cn/1828962653/md-images/image-17067840043351.png)
+![image-17067840043351](https://vip.123pan.cn/1828962653/md-images/maven.assets/image-17067840043351.png)
 
 
 
