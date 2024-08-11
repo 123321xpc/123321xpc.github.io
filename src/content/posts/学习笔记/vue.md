@@ -310,6 +310,8 @@ pm2 list
 
 
 
+
+
 ## 计算属性computed
 
 ![QQ截图20240325155514](https://vip.123pan.cn/1828962653/md-images/vue.assets/QQ截图20240325155514.png) 
@@ -3010,15 +3012,19 @@ app.use(pinia)
 ![QQ截图20240118113839](https://vip.123pan.cn/1828962653/md-images/vue.assets/QQ截图20240118113839.png)
 
 ```js
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
+import {Ref, ref} from 'vue'
+import {User} from "../types/user";
 
-export const useCountStore = defineStore('count', {
-    state(){
-        return{
-            sum:6
-        }
+const useUserStore = defineStore('user', () => {
+    const user:Ref<User | null> = ref(null)
+    const saveUser = (newUser: User) => {
+        user.value = newUser
     }
+    return {user, saveUser}
 })
+
+export default useUserStore
 ```
 
 ## 读数据

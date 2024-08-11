@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "4f9a3c94a7c97b16",
+    "type": "split",
+    "children": [
+      {
+        "id": "03ab37d18c60d898",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30e429c73a14d94d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/react快速入门.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "b89a5fa0942c752e"
+          }
+        ]
+      },
+      {
+        "id": "729eaba24c55ee11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a068b7540b1ffde",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "学习笔记/react快速入门.md"
+              }
+            },
+            "group": "b89a5fa0942c752e"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cdb16a164de82fe9",
+    "type": "split",
+    "children": [
+      {
+        "id": "c860ea23ecc485ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dba5153905bd4996",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "749e6a09d1e89856",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4f5100c99332b117",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cbe632ee363376d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a10a05c45c964c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "408fb54b609a0f74",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "学习笔记/react快速入门.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fc15eb798acffe49",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "学习笔记/react快速入门.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0378cf679d319183",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8e471d2a27321219",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "学习笔记/react快速入门.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "6a068b7540b1ffde",
+  "lastOpenFiles": [
+    "学习笔记/redis学习笔记.md",
+    "学习笔记/react快速入门.md",
+    "学习笔记/算法.md",
+    "各类问题/解决maven报错.md"
+  ]
+}
