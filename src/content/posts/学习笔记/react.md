@@ -1,67 +1,59 @@
 ---
- title: react18
-published: 2024-06-02
+title: react18
+published: 2024-06-13
 description: ''
 image: ''
 tags: [学习笔记, react]
 category: '学习笔记'
-draft: false 
-
+draft: false
 ---
-
 - [JSX语法](#jsx语法)
-	- [常用JSX语法](#常用jsx语法)
-	- [实现列表渲染](#实现列表渲染)
-	- [实现基础条件渲染](#实现基础条件渲染)
-	- [事件绑定](#事件绑定)
-		- [传递自定义参数](#传递自定义参数)
-		- [同时传递事件参数和自定义参数](#同时传递事件参数和自定义参数)
+  - [常用JSX语法](#常用jsx语法)
+  - [实现列表渲染](#实现列表渲染)
+  - [实现基础条件渲染](#实现基础条件渲染)
+  - [事件绑定](#事件绑定)
+    - [传递自定义参数](#传递自定义参数)
+    - [同时传递事件参数和自定义参数](#同时传递事件参数和自定义参数)
 - [useState](#usestate)
-	- [修改状态的规则](#修改状态的规则)
-	- [传递泛型](#传递泛型)
+  - [修改状态的规则](#修改状态的规则)
+  - [传递泛型](#传递泛型)
 - [组件](#组件)
-	- [组件样式](#组件样式)
-		- [classnames库](#classnames库)
-	- [组件通信](#组件通信)
-		- [父传子](#父传子)
-			- [children](#children)
-		- [子传父](#子传父)
-		- [跨层组件](#跨层组件)
+  - [组件样式](#组件样式)
+    - [classnames库](#classnames库)
+  - [组件通信](#组件通信)
+    - [父传子](#父传子)
+      - [children](#children)
+    - [子传父](#子传父)
+    - [跨层组件](#跨层组件)
 - [useEffect](#useeffect)
-		- [依赖项](#依赖项)
-		- [清除副作用](#清除副作用)
+  - [依赖项](#依赖项)
+  - [清除副作用](#清除副作用)
 - [hook使用规则](#hook使用规则)
 - [Redux](#redux)
-	- [配套工具](#配套工具)
-	- [store目录结构](#store目录结构)
-	- [创建store](#创建store)
-	- [注入store](#注入store)
-	- [使用store中的数据](#使用store中的数据)
-	- [修改store中的数据](#修改store中的数据)
-	- [管理异步状态数据](#管理异步状态数据)
+  - [配套工具](#配套工具)
+  - [store目录结构](#store目录结构)
+  - [创建store](#创建store)
+  - [注入store](#注入store)
+  - [使用store中的数据](#使用store中的数据)
+  - [修改store中的数据](#修改store中的数据)
+  - [管理异步状态数据](#管理异步状态数据)
 - [路由](#路由)
-	- [安装](#安装)
-	- [路由导航跳转](#路由导航跳转)
-	- [声明式导航](#声明式导航)
-	- [编程式导航](#编程式导航)
-		- [传参](#传参)
-	- [嵌套路由](#嵌套路由)
-		- [默认二级路由](#默认二级路由)
-	- [404路由](#404路由)
-	- [2种路由模式](#2种路由模式)
+  - [安装](#安装)
+  - [路由导航跳转](#路由导航跳转)
+  - [声明式导航](#声明式导航)
+  - [编程式导航](#编程式导航)
+    - [传参](#传参)
+  - [嵌套路由](#嵌套路由)
+    - [默认二级路由](#默认二级路由)
+  - [404路由](#404路由)
+  - [2种路由模式](#2种路由模式)
 - [useReducer](#usereducer)
 - [useMemo](#usememo)
 - [React.memo](#reactmemo)
-	- [props比较机制](#props比较机制)
+  - [props比较机制](#props比较机制)
 - [useCallback](#usecallback)
 - [React.forwardRef](#reactforwardref)
 - [React.useInperativeHandle](#reactuseinperativehandle)
-
-
-
-
-
-
 
 # JSX语法规则
 
@@ -88,9 +80,9 @@ const name = 'haha'
 ```
 
 6. 标签中混入JS表达式时要用`()`。
-	+ `js表达式`：一个表达式会产生一个值，能放在任何一个需要值的地方
-		- 如： `a, a + b, func(1), arr.map`等，凡是能用`const x = `接到值的都是表达式
-	+ `js语句`：`if, for, switch`
+   + `js表达式`：一个表达式会产生一个值，能放在任何一个需要值的地方
+     - 如： `a, a + b, func(1), arr.map`等，凡是能用`const x = `接到值的都是表达式
+   + `js语句`：`if, for, switch`
 
 ```jsx
 function App() {
@@ -103,27 +95,17 @@ const arr = [1, 2, 3, 4, 5]
 }
 ```
 
-
-
 7. 标签必须闭合
-
 8. 标签首字母
 
-	+ 若**小写字母**开头，则将改标签转为`html`中同名元素，若`html`中无该标签对应的同名元素，则报错。
-
-	+ 若**大写字母**开头，`React`就去渲染对应的组件，若组件没有定义，则报错。
-
-
+   + 若**小写字母**开头，则将改标签转为`html`中同名元素，若`html`中无该标签对应的同名元素，则报错。
+   + 若**大写字母**开头，`React`就去渲染对应的组件，若组件没有定义，则报错。
 
 > 注：使用`{arr}`，`JSX`会自动将数组的所有元素依次打印出来
-
-
 
 ## 常用JSX语法
 
 ![202406031519905](https://vip.123pan.cn/1828962653/md-images/202406031519905.png)
-
-
 
 ## 实现列表渲染
 
@@ -133,48 +115,28 @@ const arr = [1, 2, 3, 4, 5]
 
 ![202406031520587](https://vip.123pan.cn/1828962653/md-images/202406031520587.png)
 
-
-
 ## 事件绑定
 
 ![202406031520992](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/202406031520992.png)
-
-
 
 ### 传递自定义参数
 
 ![202406031520289](https://vip.123pan.cn/1828962653/md-images/202406031520289.png)
 
-
-
 ### 同时传递事件参数和自定义参数
 
 ![202406031520435](https://vip.123pan.cn/1828962653/md-images/202406031520435.png)
 
-
-
 ![202406031520102](https://vip.123pan.cn/1828962653/md-images/202406031520102.png)
 
-
-
-
-
-
-
 # React三大核心API
-
-
-
-
-
-
 
 # state
 
 + `state` 是一个对象，用于存储组件级别的动态数据。
 + **特点**:
-	- **本地性**: `state` 是组件私有的，其他组件不能直接访问或修改另一个组件的 `state`。
-	- **动态性**: 当 `state` 发生变化时，React 会自动重新渲染组件，以反映最新的 `state`。
+  - **本地性**: `state` 是组件私有的，其他组件不能直接访问或修改另一个组件的 `state`。
+  - **动态性**: 当 `state` 发生变化时，React 会自动重新渲染组件，以反映最新的 `state`。
 + **注意：只有值被修改时，才会重新渲染。**
 
 下述情况页面不会重新渲染，因为对象没变
@@ -182,13 +144,13 @@ const arr = [1, 2, 3, 4, 5]
 ```jsx
 function App() {
     const [user, setCount] = useState({name: '小米'})
-    
+  
     const updateUser = () => {
         user.name = '小红'
         setCount(user)
         // setCount({...user}) 这样会重新渲染，对象改变
     }
-    
+  
     return (
       <div>
           <h1>{user.name}</h1>
@@ -198,15 +160,7 @@ function App() {
 }
 ```
 
-
-
-
-
-
-
 > 直接修改变量无法在页面显示的原因：`html`元素先渲染，当函数执行时，值修改了，但页面不会重新渲染，所以页面看不到更新结果。
-
-
 
 ## useState
 
@@ -214,75 +168,67 @@ function App() {
 
 > + 注意
 >
-> 	1. **使用新的对象替换原对象**
-> 	2. **函数是异步的**，所以当短时间重复执行，并且**需要用到原state值时**，可能会计算错误, 此时需要使用回调函数的形式
+>   1. **使用新的对象替换原对象**
+>   2. **函数是异步的**，所以当短时间重复执行，并且**需要用到原state值时**，可能会计算错误, 此时需要使用回调函数的形式
 >
-> 	```jsx
-> 	 const updateCount = () => {
-> 	     setCount(count + 1)
-> 								
-> 	     // 换成如下方式，React会确保先更新完上一次的state，再更新下一次的state
-> 	     setCount(prevVal => prevVal + 1)
-> 	}
-> 	```
-> 	
-> 	3. 必须将`setState()`放入函数中使用，不能直接放入最外层函数体中。
-> 	
-> 	如下代码：
-> 	
-> 	```jsx
-> 	function App() {
-> 	    const [count, setCount] = useState(0)
-> 	    setCount(count + 1)
-> 	    return (
-> 	      <>
-> 	          <h1>{count}</h1>
-> 	          <button onClick={() => console.log("Increment")}>Increment</button>
-> 	      </>
-> 	    )
-> 	}
-> 	```
-> 	
-> 	会报如下错误：
-> 	
-> 	![image-20240802231243127](https://vip.123pan.cn/1828962653/md-images/image-20240802231243127.png)
-> 	
-> 	原理：
-> 	
-> 	+ 当`setState()`被调用时，会先判断此时处于哪个阶段
-> 	
-> 		+ 若不是渲染阶段，则执行常规检查。对象相同则不渲染，不同则渲染。
-> 			+ 当组件中存在子组件时，**若修改对象不涉及到子组件**，则当父组件第一次修改的对象相同时，还是会重新渲染一遍，但**子组件不会重新渲染**，若第二次修改对象没变，则父组件也不会再渲染。
-> 	
-> 		```jsx
-> 		function App() {
-> 		    console.log('App component rendered')
-> 		    const [count, setCount] = useState(0)
-> 		    return (
-> 		      <>
-> 		          <h1>{count}</h1>
-> 		          <Child />
-> 		          <button onClick={() => setCount(1)}>Increment</button>
-> 		      </>
-> 		    )
-> 		}
-> 		```
-> 	
-> 		如上代码：当点击按钮2次时，打印输出如下：
-> 	
-> 		![image-20240802232146068](https://vip.123pan.cn/1828962653/md-images/image-20240802232146068.png)
-> 	
-> 		当第三次点击时，父子组件均不会渲染。
-> 	
-> 		
-> 	
-> 		+ **若是渲染阶段，则不会检查，直接重新渲染。导致一致重复渲染**
-> 	
-> 			
-
-
-
-
+>   ```jsx
+>    const updateCount = () => {
+>        setCount(count + 1)
+>
+>        // 换成如下方式，React会确保先更新完上一次的state，再更新下一次的state
+>        setCount(prevVal => prevVal + 1)
+>   }
+>   ```
+>
+>   3. 必须将`setState()`放入函数中使用，不能直接放入最外层函数体中。
+>
+>   如下代码：
+>
+>   ```jsx
+>   function App() {
+>       const [count, setCount] = useState(0)
+>       setCount(count + 1)
+>       return (
+>         <>
+>             <h1>{count}</h1>
+>             <button onClick={() => console.log("Increment")}>Increment</button>
+>         </>
+>       )
+>   }
+>   ```
+>
+>   会报如下错误：
+>
+>   ![image-20240802231243127](https://vip.123pan.cn/1828962653/md-images/image-20240802231243127.png)
+>
+>   原理：
+>
+>   + 当`setState()`被调用时，会先判断此时处于哪个阶段
+>
+>     + 若不是渲染阶段，则执行常规检查。对象相同则不渲染，不同则渲染。
+>       + 当组件中存在子组件时，**若修改对象不涉及到子组件**，则当父组件第一次修改的对象相同时，还是会重新渲染一遍，但**子组件不会重新渲染**，若第二次修改对象没变，则父组件也不会再渲染。
+>
+>     ```jsx
+>     function App() {
+>         console.log('App component rendered')
+>         const [count, setCount] = useState(0)
+>         return (
+>           <>
+>               <h1>{count}</h1>
+>               <Child />
+>               <button onClick={() => setCount(1)}>Increment</button>
+>           </>
+>         )
+>     }
+>     ```
+>
+>     如上代码：当点击按钮2次时，打印输出如下：
+>
+>     ![image-20240802232146068](https://vip.123pan.cn/1828962653/md-images/image-20240802232146068.png)
+>
+>     当第三次点击时，父子组件均不会渲染。
+>
+>     + **若是渲染阶段，则不会检查，直接重新渲染。导致一致重复渲染**
 
 ## 修改状态的规则
 
@@ -290,17 +236,11 @@ function App() {
 
 ![image-20240609192551509](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609192551509.png)
 
-
-
 ## 传递泛型
 
 ![image-20240610154311431](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610154311431.png)
 
-
-
 ![image-20240610154726394](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610154726394.png)
-
-
 
 # Ref & useRef
 
@@ -319,53 +259,46 @@ function App() {
 
 + ### `useRef` 的特点
 
-	1. **可变 `current` 属性**:
 
-	  - `useRef` 返回的对象是一个有`current` 属性的对象，初始值为传递给 `useRef` 的参数。
+  1. **可变 `current` 属性**:
 
-	  - `current` 是可变的，你可以随时更改它，而不会导致组件重新渲染。
+  - `useRef` 返回的对象是一个有`current` 属性的对象，初始值为传递给 `useRef` 的参数。
 
-	  - 也就是说，不一定非要使用`useRef`钩子，如下代码照样能拿到原生DOM元素
+  - `current` 是可变的，你可以随时更改它，而不会导致组件重新渲染。
 
-	  - ```
-	
-	  	const r1 = 
-	  	```
-	
-	  - 二者区别：
-	
-	  	- `useRef` 返回的对象在组件的整个生命周期内保持不变，即 `ref` 对象在每次渲染时都是相同的。
-	
-	3. **无渲染影响**:
-	
-		- 更新 `.current` 的值不会导致组件的重新渲染，这是 `useRef` 的一个关键特性，适用于需要持久化但不需要触发渲染的场景。
+  - 也就是说，不一定非要使用`useRef`钩子，如下代码照样能拿到原生DOM元素
 
+  - ```
+
+  	const r1 = 
+  	```
+
+  - 二者区别：
+
+  	- `useRef` 返回的对象在组件的整个生命周期内保持不变，即 `ref` 对象在每次渲染时都是相同的。
+  3. **无渲染影响**:
+
+     - 更新 `.current` 的值不会导致组件的重新渲染，这是 `useRef` 的一个关键特性，适用于需要持久化但不需要触发渲染的场景。
 # 组件
 
 ## 组件样式
 
 ![image-20240609192834816](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609192834816.png)
 
-
-
 > 注：
 >
 > 1. 多个单词必须用小驼峰。
 > 2. 是`className`，不是`class`
-
-
+>
 
 ### classnames库
 
 ![image-20240609193706313](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609193706313.png)
 
-
-
 ## 组件通信
 
-### 父传子
+### 父传子- 父组件传递数据
 
-- 父组件传递数据
 
 ![image-20240609193952490](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609193952490.png)
 
@@ -381,31 +314,19 @@ function App() {
 
 ![image-20240609194601080](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609194601080.png)
 
-
-
 ### 子传父
 
 ![image-20240609194709092](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609194709092.png)
-
-
 
 ### 跨层组件
 
 ![image-20240609200105423](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609200105423.png)
 
-1. 
-
 ![image-20240609195404529](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609195404529.png)
-
-2. 
 
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609195523677.png" alt="image-20240609195523677" style="zoom:67%;" />
 
-3. 
-
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609195436584.png" alt="image-20240609195436584" style="zoom: 80%;" />
-
-
 
 # useEffect
 
@@ -417,27 +338,21 @@ function App() {
 2. **DOM 操作**: 手动修改 DOM，比如操作非受控组件的值。
 3. **本地存储**: 读取或写入浏览器的本地存储（`localStorage / sessionStorage`）。
 
-
-
 + 这些操作在页面渲染阶段执行会影响页面渲染，进而影响性能。
-	+ 例如：
-		+ 在渲染阶段调用`setState()`会报错`to many render`
-		+ 执行打印语句会使页面重新渲染一次
-
-
+  + 例如：
+    + 在渲染阶段调用`setState()`会报错`to many render`
+    + 执行打印语句会使页面重新渲染一次
 
 ## useEffect清除副作用原理
 
 1. `useEffect` 可以返回一个函数，这个函数会在组件卸载或者副作用需要重新执行之前调用。页面渲染时不会调用。这就是清除副作用的过程。返回的这个函数被称为清理函数或清除函数。
 2. 清理函数的调用时机
-	1. **组件卸载时**:
-		- 当组件被从 DOM 中移除时，React 会调用 `useEffect` 的清理函数。这是确保在组件生命周期结束时，所有的副作用都被正确清除。
-	2. **依赖项更新时**:
-		- 如果 `useEffect` 的依赖数组（第二个参数）中的某个依赖项发生了变化，React 会在执行新的副作用之前调用上一次执行 `useEffect` 时返回的清理函数。这是为了确保在同一个组件实例中更新副作用时，前一个副作用得到正确的清理。
-	3. **重新渲染时（在某些情况下）**:
-		- 在没有依赖数组的情况下，每次组件渲染都会执行 `useEffect`，因此每次都会执行清理函数。虽然通常不推荐这样使用，但这是可能的行为。
-
-
+   1. **组件卸载时**:
+      - 当组件被从 DOM 中移除时，React 会调用 `useEffect` 的清理函数。这是确保在组件生命周期结束时，所有的副作用都被正确清除。
+   2. **依赖项更新时**:
+      - 如果 `useEffect` 的依赖数组（第二个参数）中的某个依赖项发生了变化，React 会在执行新的副作用之前调用上一次执行 `useEffect` 时返回的清理函数。这是为了确保在同一个组件实例中更新副作用时，前一个副作用得到正确的清理。
+   3. **重新渲染时（在某些情况下）**:
+      - 在没有依赖数组的情况下，每次组件渲染都会执行 `useEffect`，因此每次都会执行清理函数。虽然通常不推荐这样使用，但这是可能的行为。
 
 ## 使用
 
@@ -449,21 +364,18 @@ function App() {
 
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609201148661.png" alt="image-20240609201148661" style="zoom:50%;" />
 
->上述代码，每当count改变时，函数就会执行。
+> 上述代码，每当count改变时，函数就会执行。
 >
->`setState()`没有必要写进去，因为`useState`会保证获取到的`setState`是同一个对象。
-
-
+> `setState()`没有必要写进去，因为`useState`会保证获取到的`setState`是同一个对象。
+>
 
 ### 清除副作用
 
 ![image-20240609201324456](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609201324456.png)
 
- 例：
+例：
 
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609201718375.png" alt="image-20240609201718375" style="zoom:50%;" />
-
-
 
 # hook使用规则
 
@@ -487,8 +399,6 @@ function App() {
 - **轻松的数据更新**：`RTK Query`管理响应和缓存，支持乐观更新和无效化技术，使得数据始终保持最新。
 
 ![image-20240609203827967](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240609203827967.png)
-
-
 
 ## 使用RTKQ
 
@@ -518,7 +428,6 @@ export const apiSlice = createApi({
 
 export const { useGetUsersQuery } = apiSlice;
 ```
-
 这段代码定义了一个 `User` 类型和一个 `getUsers` 查询，用来获取用户列表。
 
 ### 第二步：在组件中使用 `useQuery` 钩子
@@ -550,7 +459,6 @@ const Users: React.FC = () => {
 
 export default Users;
 ```
-
 ### 第三步：配置 Redux Store
 
 配置 Redux store 并添加我们的 API slice。
@@ -568,7 +476,6 @@ export const store = configureStore({
     getDefaultMiddleware().concat(apiSlice.middleware),
 });
 ```
-
 ### 第四步：提供 Redux Store
 
 最后，在应用的入口文件中包装你的应用组件，以便提供 Redux store。
@@ -588,9 +495,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-
-
-
 ### 将`fetchBaseQuery`换成`axios`
 
 ```typescript
@@ -644,18 +548,7 @@ export const axiosBaseQuery = (
 
 export default axiosBaseQuery;
 ```
-
-
-
-
-
-
-
 ## 本地持久化插件 redux-persist
-
-
-
-
 
 # 路由
 
@@ -664,9 +557,6 @@ export default axiosBaseQuery;
 ```
 cnpm i react-router-dom
 ```
-
-
-
 ## 路由导航跳转
 
 ## 声明式导航
@@ -685,8 +575,6 @@ cnpm i react-router-dom
 
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610144935140.png" alt="image-20240610144935140" style="zoom:50%;" />
 
-
-
 ## 嵌套路由
 
 ![image-20240610145100434](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610145100434.png)
@@ -699,13 +587,9 @@ cnpm i react-router-dom
 
 ![image-20240610145800181](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610145800181.png)
 
-
-
 ## 2种路由模式
 
 ![image-20240610150024633](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610150024633.png)
-
-
 
 # useReducer
 
@@ -713,15 +597,11 @@ cnpm i react-router-dom
 
 ![image-20240610150400129](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610150400129.png)
 
-
-
 ![image-20240610151032828](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610151032828.png)
 
 # useMemo
 
 ![image-20240610151332204](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610151332204.png)
-
-
 
 # React.memo
 
@@ -734,12 +614,11 @@ cnpm i react-router-dom
 ![image-20240610152158813](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610152158813.png)
 
 > 当传递的是复杂数据时，比较的是引用是否变化。而当组件重新渲染时，引用会改变！
+>
 
 + 若需要保证渲染过程中复杂数据的引用不变，可以对数据使用useMemo，如下：
 
 ![image-20240610152632237](https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610152632237.png)
-
-
 
 # useCallback
 
@@ -753,8 +632,6 @@ cnpm i react-router-dom
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610153235460.png" alt="image-20240610153235460" style="zoom: 33%;" />
 
 <img src="https://vip.123pan.cn/1828962653/md-images/react快速入门.assets/image-20240610153258190.png" alt="image-20240610153258190" style="zoom:33%;" />
-
-
 
 # React.useInperativeHandle
 
