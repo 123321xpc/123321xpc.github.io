@@ -41,8 +41,8 @@ title: ${args[0]}
 published: ${getDate()}
 description: ''
 image: ''
-tags: [LeetCode, ]
-category: '算法练习'
+tags: []
+category: '各类问题'
 draft: false 
 ---
 `
